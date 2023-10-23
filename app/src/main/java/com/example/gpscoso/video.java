@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 public class video extends AppCompatActivity {
@@ -14,8 +15,14 @@ public class video extends AppCompatActivity {
         setContentView(R.layout.activity_video);
 
         VideoView videoView = findViewById(R.id.videoView);
+        TextView institutionNameTextView = findViewById(R.id.txt_cosoTexto);
+
 
         int videoResource = getIntent().getIntExtra("videoResource", 0);
+        String institutionName = getIntent().getStringExtra("institutionName");
+
+
+        institutionNameTextView.setText(institutionName);
 
         if (videoResource != 0) {
             String videoPath = "android.resource://" + getPackageName() + "/" + videoResource;
