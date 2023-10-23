@@ -49,7 +49,21 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap = googleMap;
         this.mMap.setOnMapClickListener(this);
         this.mMap.setOnMapLongClickListener(this);
-        addMarker(-38.734069, -72.602283, "Mi Sede", R.raw.videito);
+        addMarker(-38.734069, -72.602283, "misede", R.raw.videito);
+        addMarker(-39.817157, -73.233365, "SedeValdivia", R.raw.videito);
+        addMarker(-18.43233, -70.310443, "SedeArica", R.raw.videito);
+        addMarker(-20.218889, -70.141041, "SedeIquique", R.raw.videito);
+        addMarker(-23.634560, -70.394136, "SedeAntofa", R.raw.videito);
+        addMarker(-29.901486, -71.260357, "SedeSerena", R.raw.videito);
+        addMarker(-33.037293, -71.522302, "SedeViña", R.raw.videito);
+        addMarker(-33.555032, -70.622681, "SedeSantiago", R.raw.videito);
+        addMarker(-35.428565, -71.672952, "SedeTalca", R.raw.videito);
+        addMarker(-36.826197, -73.061623, "SedeConcepcion", R.raw.videito);
+        addMarker(-37.473145, -72.354595, "SedeAngeles", R.raw.videito);
+        addMarker(-40.571669, -73.137779, "SedeOsorno", R.raw.videito);
+        addMarker(-43.472499, -72.929070, "SedePuertoMontt", R.raw.videito);
+
+        ;
 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
